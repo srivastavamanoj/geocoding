@@ -5,8 +5,8 @@ def search(request):
   results = []
 
   if len(request.GET) == 0:
-    return HttpResponse('A Custom GeoCoding Service Based on Google and HERE\'s'+ 
-                        ' GeoCoding Services', content_type='text/plain')
+    return HttpResponse('Welcome to the GeoCoding Service!',
+                        content_type='text/plain')
 
   searchText = request.GET.get('q', '')
   if len(searchText) == 0:

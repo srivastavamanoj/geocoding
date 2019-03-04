@@ -1,13 +1,13 @@
 '''
 *** GeoCoding Service Using Google and HERE's Geocoding API ****
 1. A custom Geocoding Service is created using Google and HERE Geocoding Services. 
-   This API does a free-form address lookup and produces lattitude and longitude 
+   This API does a free-form address lookup, and produces lattitude and longitude 
    of the address. 
-2. For the sake of brevity other geocoding services such as specific viewport, 
+2. For the sake of brevity, other geocoding services such as specific viewport, 
    intersection address, etc are not implemented.
 3. It uses GoogleService primarily, and HERE as a backup service.
 4. Code creates an abstract baseclass "BaseService" and we derive GoogleService and 
-   HereService from it which implement url fetching () and output json file parsing.
+   HereService from it which implement url fetching and output json file parsing.
 5. You need to create your own API_KEY in case of Google Service and API_ID and 
    API_CODE in case HERE Service.  
 '''
